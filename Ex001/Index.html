@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 001</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<!--
+Exercício 1 — Cartão de Perfil
+Crie uma página com um único "cartão" centralizado contendo:
+
+Uma imagem (pode ser uma foto sua, um avatar ou uma imagem qualquer da internet);
+Nome e uma frase curta de descrição (ex: "Estudante de Desenvolvimento de Sistemas");
+Uma pequena lista (ul) com 3 a 5 hobbies ou habilidades;
+Um link para uma rede social ou portfólio, que abra em nova aba.
+Estilização:
+
+O cartão deve ter fundo diferente do body, cantos arredondados e uma borda sutil (reaproveite a ideia de .section da aula).
+A imagem deve ter formato circular.
+O link deve mudar de cor no hover.
+-->
+
 <body>
-    
+    <main>
+        <div class="pageTitle">
+            <h1>João Pedro Fávero</h1>
+            <p>Estudante de Desenvolvimento de Sistemas e Ciência da Computação</p>
+        </div>
+
+        <span class="imgCard">
+            <img src="https://img.magnific.com/vetores-gratis/isolado-jovem-bonito-em-poses-diferentes-na-ilustracao-de-fundo-branco_632498-646.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Avatar anonimo">
+        </span>
+        <br>
+
+        <section class="lists">
+            <div class="skills">
+                <h1>Habilidades</h1>
+                <ul>
+                    <li>Desenho</li>
+                    <li>E só....</li>
+                </ul>
+            </div>
+
+            <div class="hobbies">
+                <h1>Hobbies</h1>
+                <ul>
+                    <li>Desenho</li>
+                    <li>Leitura</li>
+                    <li>Riding</li>
+                    <li>Pesca</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="linksContainer">
+            <h2>Links</h2>
+            <section class="links">
+                <div class="instagram">
+                    <a href="http://www.instagram.com/joaopedro_favero?igsh=MTN20HlseGEyMjgyMw=="
+                        target="_blank">Desenhos
+                        Instagram</a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/JoaoPedroFavero" target="_blank">Códigos Github</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
 </body>
+
 </html>
