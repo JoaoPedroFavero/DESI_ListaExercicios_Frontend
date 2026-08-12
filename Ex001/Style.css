@@ -1,74 +1,69 @@
 body {
     font-family: "Outfit", sans-serif;
     margin: 15px;
+    background-color: rgb(37, 54, 99);
+    color: azure;
 }
 
 p {
     font-size: 25px;
 }
 
-.pageTitle {
-    justify-content: center;
-    align-items: center;
+.card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(55, 71, 105);
+    box-shadow: 0 0 20px rgb(55, 71, 105);
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.img {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: inherit;
 }
 
 .pageTitle h1 {
     font-size: 50px;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
-.imgCard {
-    width: "500px";
-    height: "500px";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 580px;
-    background-image: radial-gradient(circle, white, rgb(236, 236, 236), rgb(173, 173, 173));
+.pageTitle p {
+    margin-top: 5px;
 }
 
 .lists {
     display: flex;
+    flex-direction: column;
     gap: 25px;
     justify-content: center;
-    background-color: rgb(204, 204, 204);
-    border-radius: 25px;
     padding: 10px;
 }
 
-.skills {
-    background-color: white;
-    border-radius: 30px;
-    min-width: 200px;
-    padding: 15px;
+.lists h1 {
+    margin-bottom: 0;
+}
+
+.lists ul{
+    margin-top: 0px;
     font-size: 25px;
 }
 
-.skills h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hobbies {
-    background-color: white;
-    border-radius: 30px;
-    min-width: 200px;
-    padding: 15px;
-    font-size: 25px;
-}
-
-.hobbies h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.linksContainer{
+.linksContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,22 +71,20 @@ p {
 
 }
 
-.linksContainer h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.links{
+.links {
     font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-.instagram, .github{
+.links a{
+    color: rgb(125, 149, 255);
     text-decoration: none;
-    color: aqua;
+}
+
+.instagram:hover, .github:hover{
+    color: aqua; 
+    scale: 1.05;   
 }

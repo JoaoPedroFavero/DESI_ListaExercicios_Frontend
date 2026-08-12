@@ -1,0 +1,105 @@
+:root {
+    --background-orange: rgb(255, 157, 111);
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/4398834-padrao-sem-costura-de-preto-e-branco-pizza-repetir-fundo-com-isolado-monocromatico-pedacos-de-pizza-queijo-tomate-pimenta-manjericao-cogumelo-salsicha-salame-bacon-azeitona-camarao-mussarela-vetor.jpg);
+    
+}
+
+
+li {
+    font-size: 20px;
+}
+
+/* TITULO E IMAGEM */
+
+.foodHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foodHead h1 {
+    font-size: 50px;
+}
+
+.pizza {
+    animation: girar 30s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+/* INGREDIENTES */
+
+.ingredientes {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-orange);
+    border-radius: 30px;
+
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ingredientes h1,
+h2 {
+    text-align: center;
+}
+
+.ingredientes ul {
+    margin-left: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* PREPARO */
+.preparo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.preparo ol {
+    gap: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.preparo ol li::marker{
+    font-weight: bold;
+}
+
+/* FOOTER */
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    align-items: first baseline;
+    background-color: var(--background-orange);
+    border-radius: 30px;
+
+    max-width: 700px;
+    margin: 0 auto;
+}

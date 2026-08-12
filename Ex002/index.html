@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 002</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 
+Exercício 2 — Página de Receita Culinária
+Monte a página de uma receita (escolha o prato que quiser) contendo:
+
+Um título principal com o nome do prato;
+Uma imagem do prato;
+Uma lista não ordenada com os ingredientes;
+Uma lista ordenada com o modo de preparo (passo a passo);
+Um rodapé (footer) com o tempo de preparo e o rendimento (quantas porções).
+Estilização:
+
+Diferencie visualmente a seção de ingredientes da seção de modo de preparo (cores de fundo diferentes, por exemplo).
+Use div para agrupar cada bloco de conteúdo (ingredientes, preparo, etc.) e estilize cada div separadamente.
+-->
+
+<body>
+    <main>
+        <div class="foodHead">
+            <img class="pizza"
+                src="https://png.pngtree.com/png-clipart/20241230/original/pngtree-a-full-pizza-view-from-the-top-png-image_18320394.png"
+                alt="pizza" width="500px" height="500px">
+
+            <h1>Pizza Calabrita Don Corleone</h1>
+        </div>
+
+        <div class="ingredientes">
+            <h1>Ingredientes</h1>
+
+            <h2>Para a Massa</h2>
+            <ul>
+                <li>3 xícaras de farinha de trigo</li>
+                <li>1 colher de sopa de açúcar</li>
+                <li>1 colher de chá de sal</li>
+                <li>1 sachê (10 g) de fermento biológico seco</li>
+                <li>2 colheres de sopa de azeite</li>
+                <li>1 xícara de água morna, aproximadamente</li>
+            </ul>
+
+            <h2>Para o Recheio</h2>
+            <ul>
+                <li>200 g de calabresa fatiada</li>
+                <li>150 g de champignon fatiado</li>
+                <li>250 g de muçarela ralada</li>
+                <li>1/2 xícara de molho de tomate</li>
+                <li>1/2 cebola pequena fatiada</li>
+                <li>1 colher de sopa de azeite</li>
+                <li>Orégano a gosto</li>
+                <li>Pimenta-do-reino a gosto</li>
+                <li>Azeitonas a gosto (opcional)</li>
+            </ul>
+        </div>
+        <br>
+        <div class="preparo">
+            <h1>Modo de Preparo</h1>
+
+            <ol>
+                <li>Prepare a massa: misture a farinha, o açúcar, o sal e o fermento em uma tigela. Acrescente o azeite
+                    e vá colocando a água morna aos poucos, misturando até formar uma massa.</li>
+                <li>Sove por 8 a 10 minutos, até a massa ficar lisa e elástica.</li>
+                <li>Cubra e deixe descansar por aproximadamente 1 hora, ou até dobrar de tamanho.</li>
+                <li>Prepare a cobertura: em uma frigideira, doure a calabresa fatiada em fogo médio. Se soltar muita
+                    gordura, retire o excesso.</li>
+                <li>Acrescente a cebola e refogue por alguns minutos. Junte o champignon e cozinhe por cerca de 3
+                    minutos. Reserve.</li>
+                <li>Preaqueça o forno na temperatura máxima, entre 230 e 250 °C.</li>
+                <li>Abra a massa em uma superfície enfarinhada e coloque-a em uma forma de pizza.</li>
+                <li>Espalhe o molho de tomate sobre a massa e cubra com a muçarela.</li>
+                <li>Distribua a calabresa, o champignon e a cebola por cima.</li>
+                <li>Finalize com orégano, pimenta-do-reino e azeitonas, se quiser.</li>
+                <li>Asse por aproximadamente 15 a 20 minutos, ou até a borda ficar dourada e o queijo bem derretido.
+                </li>
+            </ol>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="rodape">
+            <div>
+                <h3>Tempo de preparo</h3>
+                <ul>
+                    <li>Preparo: 25 minutos</li>
+                    <li>Descanso da massa: 1 hora</li>
+                    <li>Forno: 15–20 minutos</li>
+                    <li>Tempo total: de 1h40 a 1h45</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Rendimento</h3>
+                <ul>
+                    <li>1 pizza grande, 8 fatias.</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
