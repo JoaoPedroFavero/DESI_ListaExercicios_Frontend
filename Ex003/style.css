@@ -1,26 +1,114 @@
-:root{
-
-}
-
-body{
+body {
     font-family: "Outfit", sans-serif;
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
-.bg-barra-pesquisa{
+.bg-barra-pesquisa {
     min-height: 60px;
     background-color: rgb(255, 120, 233);
-}
-
-.barra-pesquisa{
     display: flex;
     justify-content: center;
-    align-items: center;
+
+}
+
+.barra-pesquisa {
+    justify-content: space-around;
     min-height: 35px;
     width: 60%;
     background-color: white;
     border-radius: 25px;
-    color:;
-    
+    color: rgb(117, 117, 117);
+    margin: 10px;
+    border: none;
+    padding: 0 10px;
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+
+/*PRODUTO-CONTAINER*/
+.produto-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 3% 10% 10% 5%;
+    width: 100%;
+
+}
+
+/*IMAGEM DO RELOGIO*/
+
+.imagem-relogio {
+    display: block;
+    width: 45%;
+    height: auto;
+}
+
+img {
+    width: 40vw;
+}
+
+/*INTERATION CONTAINER - Texto*/
+
+.interation-container {
+    width: 40%;
+}
+
+.preco{
+    font-size: 30px;
+
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*INTERATION CONTAINER - Botões*/
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0% 0% 0%;
+}
+
+button {
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.addToCart {
+    background-color: rgb(255, 120, 233);
+    color: rgb(255, 222, 250);
+
+    &:hover {
+        background-color: rgb(255, 222, 250);
+        color: rgb(255, 120, 233);
+    }
+}
+
+.buyNow {
+    background-color: rgb(19, 211, 105);
+    color: rgb(255, 222, 250);
+
+    &:hover {
+        background-color: rgb(225, 255, 222);
+        color: rgb(19, 211, 105);
+    }
 }
