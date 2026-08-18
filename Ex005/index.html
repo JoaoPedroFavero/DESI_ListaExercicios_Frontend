@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+    Exercício 5 — Formulário de Cadastro de Evento
+Crie um formulário de inscrição para um evento (uma palestra, um show, o que preferir), contendo pelo menos:
+
+Nome completo;
+E-mail;
+Data de nascimento;
+Um campo de seleção (select) para "Tipo de ingresso" (ex: Meia, Inteira, VIP);
+Um campo de texto longo (textarea) para "Alguma observação?";
+Dois botões: limpar e enviar.
+Estilização:
+
+Cada campo (label + input) deve ficar visualmente agrupado dentro de uma div.
+Os campos devem ter um espaçamento uniforme entre si (não use vários <br> soltos — organize com CSS).
+O formulário inteiro deve estar dentro de um "cartão" central, com largura máxima definida (pesquise sobre max-width) para não esticar demais em telas largas.
+Estilize o placeholder dos campos com uma cor diferente do texto digitado.
+ -->
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <img class="img" src="https://images.seeklogo.com/logo-png/65/2/saja-boys-logo-png_seeklogo-656505.png"
+                alt="logo">
+
+            <div class="form-input">
+                <form action="submit">
+                    <label for="nome">Nome Completo</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome completo">
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Digite seu Email">
+
+                    <label for="date">Data de Nascimento</label>
+                    <input id="date" type="date" placeholder="Digite sua data de nascimento">
+
+                    <label for="text">Observação</label>
+                    <textarea id="text" placeholder="Escreva sua observação aqui..."></textarea>
+
+                    <div class="buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

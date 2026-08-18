@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: rgb(78, 78, 78);
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 0;
+    min-height: 50px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    grid-auto-flow: dense;
+    overflow: hidden;
+    margin: 10px;
+}
+
+img {
+    width: 22vw;
+    height: auto;
+    border-radius: 15px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.biggers{
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    gap:5px;
+    margin: 10px;
+}
+
+.smallers{
+    grid-column: span 2;
+}
